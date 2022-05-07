@@ -9,6 +9,8 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsarioInfo from "./components/condicional/UsarioInfo";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -17,8 +19,13 @@ export default () => {
       <h1>Fundamentos React!</h1>
 
       <div className="Cards">
+        <Card titulo="#07 - Renderização Condicional" color="#FAA200">
+          <ParOuImpar numero={21} />
+          <UsarioInfo usuario={{ nome: "Fernando" }} />
+          <UsarioInfo usuario={{ email: "fer@nando.com" }} />
+        </Card>
 
-      <Card titulo="#06 - Lista de Repetição - Produtos" color="#FA00A2">
+        <Card titulo="#06 - Lista de Repetição - Produtos" color="#FA00A2">
           <TabelaProdutos />
         </Card>
 
