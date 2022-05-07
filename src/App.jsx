@@ -11,14 +11,29 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsarioInfo from "./components/condicional/UsarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   return (
     <div className="App">
       <h1>Fundamentos React!</h1>
 
       <div className="Cards">
+
+        <Card titulo="#11 - Componente Controlado (Input)" color="#FF0051">
+          <Input/>
+        </Card>
+
+        <Card titulo="#10 - Comunicação Indireta" color="#7AE858">
+          <IndiretaPai />
+        </Card>
+
+        <Card titulo="#09 - Comunicação Direta" color="#0ED0F2">
+          <DiretaPai />
+        </Card>
+
         <Card titulo="#07 - Renderização Condicional" color="#FAA200">
           <ParOuImpar numero={21} />
           <UsarioInfo usuario={{ nome: "Fernando" }} />

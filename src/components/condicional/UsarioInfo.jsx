@@ -1,5 +1,5 @@
 import React from "react";
-import If from "./If";
+import If, { Else } from "./If";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (props) => {
