@@ -5,6 +5,7 @@ import Card from "./components/layout/Card";
 import Aleatorio from "./components/basicos/Aleatorio";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
+import Familia from "./components/basicos/Familia";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -13,6 +14,10 @@ export default () => {
       <h1>Fundamentos React!</h1>
 
       <div className="Cards">
+        <Card titulo="#04 - Componente com Filhos" color="#0075FA">
+          <Familia sobrenome="Ferreira"/>
+        </Card>
+
         <Card titulo="#03 - Desafio Aleatório" color="#FA6900">
           <Aleatorio min={1} max={60} />
         </Card>
