@@ -7,6 +7,7 @@ import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -15,6 +16,10 @@ export default () => {
       <h1>Fundamentos React!</h1>
 
       <div className="Cards">
+        <Card titulo="#05 - Lista de Repetição" color="#7D00FA">
+          <ListaAlunos />
+        </Card>
+
         <Card titulo="#04 - Componente com Filhos" color="#0075FA">
           <Familia sobrenome="Jhonson's">
             <FamiliaMembro nome="Pedro" />
