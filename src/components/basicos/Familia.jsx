@@ -1,13 +1,16 @@
-import React from "react";
-import FamiliaMembro from "./FamiliaMembro";
+import React, { cloneElement } from "react";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default props => {
-    return(
-        <div>
-            <FamiliaMembro nome="Pedro" sobrenome={props.sobrenome}/>
-            <FamiliaMembro nome="Ana" {...props}/>
-            <FamiliaMembro nome="Fernanda" sobrenome="Jackson's"/>
-        </div>
-    )
-}
+export default (props) => {
+  return (
+    <div>
+      {
+        // cloneElement(props.children, { ...props }) -> para 1 elemento
+        // Vários elementos
+        props.children.map((child, i) => {
+          return cloneElement(child, { ...props, key: i });
+        })
+      }
+    </div>
+  );
+};

@@ -6,6 +6,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import Primeiro from "./components/basicos/Primeiro";
 import ComParametro from "./components/basicos/ComParametro";
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -15,7 +16,11 @@ export default () => {
 
       <div className="Cards">
         <Card titulo="#04 - Componente com Filhos" color="#0075FA">
-          <Familia sobrenome="Ferreira"/>
+          <Familia sobrenome="Jhonson's">
+            <FamiliaMembro nome="Pedro" />
+            <FamiliaMembro nome="Ana" />
+            <FamiliaMembro nome="Fernanda" />
+          </Familia>
         </Card>
 
         <Card titulo="#03 - Desafio Aleatório" color="#FA6900">
