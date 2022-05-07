@@ -1,6 +1,12 @@
+import './index.css'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Primeiro from './components/basicos/Primeiro'
+
 ReactDOM.render(
-    'Olá Rect!',
+    <div>
+        <Primeiro/>
+    </div>,
     document.getElementById('root')
 )
