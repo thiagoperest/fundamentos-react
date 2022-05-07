@@ -2,16 +2,6 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Primeiro from "./components/basicos/Primeiro";
-import ComParametro from "./components/basicos/ComParametro";
+import App from "./App";
 
-ReactDOM.render(
-  <div>
-    <Primeiro />
-    <ComParametro
-      titulo="Segundo Componente"
-      subtitulo="Subtitulo Segundo Componente"
-    />
-  </div>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
